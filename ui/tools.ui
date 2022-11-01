@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>486</width>
+    <height>439</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="main_layer">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="filepath_Lb">
+          <property name="text">
+           <string>文件路径：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="filepath_Le"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="filepath_Btn">
+          <property name="text">
+           <string>&lt;&lt;&lt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>486</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="proj_menu">
+    <property name="title">
+     <string>项目</string>
+    </property>
+    <addaction name="proj_setting_menu"/>
+    <addaction name="separator"/>
+    <addaction name="updataMenu"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="proj_menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="proj_setting_menu">
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </action>
+  <action name="actiondi">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>低质量</string>
+   </property>
+  </action>
+  <action name="actiongao">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>高质量</string>
+   </property>
+  </action>
+  <action name="updataMenu">
+   <property name="text">
+    <string>刷新</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
